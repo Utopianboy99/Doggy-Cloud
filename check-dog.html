@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Doddy Cloud/Sign-in page.co.za</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+<body class="form">
+    <div class="container">
+      <header class="header">
+        <h1 id="title" class="text-center">Doggy Cloud 'know your dog' Form</h1>
+        <p id="description" class="description text-center">
+          Right, lets help you know what breed you have <label></label>
+        </p>
+      </header>
+      <form id="survey-form">
+        <div class="form-group">
+          <label id="name-label" for="name">Name</label>
+          <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required="">
+        </div>
+        <br>
+        <div class="form-group">
+          <label id="email-label" for="email">Email</label>
+          <input type="email" name="email" id="email" class="form-control" placeholder="Enter your Email" required="">
+        </div>
+        <br>
+        <div class="form-group">
+          <label id="number-label" for="number">Age<span class="clue">(optional)</span></label>
+          <input type="number" name="age" id="number" min="10" max="99" class="form-control" placeholder="Age">
+        </div>
+        <br>
+        <div class="form-group">
+          <p>Which option best describes your current pet?</p>
+          <select id="dropdown" name="character" class="form-control" required="">
+            <option disabled="" selected="" value="">Select from these characters</option>
+            <option value="student">lazy</option>
+            <option value="job">Hyper Active</option>
+            <option value="learner">Over Protective</option>
+            <option value="preferNo">Stubbon</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+        <br>
+        <div class="form-group">
+          <p>Could you describe your pets physical features</p>
+          <select id="looks" name="physical-features" class="features" required="">
+            <option disabled="" selected="" value="">Select an option</option>
+            <option value="challenges">Big and Tall</option>
+            <option value="projects">Small and Tiny</option>
+            <option value="community">Fat/Round</option>
+            <option value="openSource">Slim/lin</option>
+            <option value="openSource">Sharp Canine</option>
+            <option value="openSource">Round Canine</option>
+            <option value="openSource">Round Face</option>
+            <option value="openSource">Round snout</option>
+            <option value="openSource">Pointy snout</option>
+            <option value="openSource">Drooly Mouth</option>
+            <option value="openSource">Clumsy Feet</option>
+          </select>
+        </div>
+        <br>
+        <div class="form-group">
+          <p>
+            Does your pet have any of the following?
+            <span class="clue">(Check all that apply)</span>
+          </p>
+
+          <label><input name="Skin-fur" value="Charcoal fur" type="checkbox" class="input-checkbox">Front-end Projects</label>
+          <label>
+            <br>
+            <input name="Skin-fur" value="Caramel fur" type="checkbox" class="input-checkbox">Caramel fur</label>
+            <br>
+          <label><input name="Skin-fur" value="Vanila White fur" type="checkbox" class="input-checkbox">Vanila White fur</label>
+          <br>
+          <label><input name="Skin-fur" value="Black fur" type="checkbox" class="input-checkbox">Black fur</label>
+          <br>
+          <label><input name="Skin-fur" value="Black and white" type="checkbox" class="input-checkbox">Black and white</label>
+          <br>
+          <label><input name="Skin-fur" value="white and black fur" type="checkbox" class="input-checkbox">white and black fur</label>
+          <br>
+          <label><input name="Skin-fur" value="brown fur" type="checkbox" class="input-checkbox">brown fur</label>
+          <br>
+          <label><input name="Skin-fur" value="Large fur" type="checkbox" class="input-checkbox">Large fur</label>
+          <br>
+          <label><input name="Skin-fur" value="Medium Fur" type="checkbox" class="input-checkbox">Medium Fur</label>
+          <br>
+          <label><input name="Skin-fur" value="Small fur" type="checkbox" class="input-checkbox">Small fur</label>
+          <br>
+          <label><input name="Skin-fur" value="Other" type="checkbox" class="input-checkbox">Other</label>
+          <br>
+        </div>
+
+        <div class="form-group">
+          <p>Could you please tell us more about your lovely pet to ensure our findings are accurate?</p>
+          <textarea id="comments" class="input-textarea" name="comment" placeholder="Enter your comment here..."></textarea>
+        </div>
+
+        <div class="form-group">
+          <button type="submit" id="submit" class="submit-button">
+            Submit
+          </button>
+        </div>
+      </form>
+    </div>
+  
+
+</body>
+</html>
