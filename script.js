@@ -47,6 +47,18 @@ button.addEventListener('click', (e) => {
     }
 })
 
+button.addEventListener('submit', (e) => {
+    let email = email1.value
+    let password = password.value 
+
+    //localStorage
+
+    localStorage.setItem('email', email)
+    localStorage.setItem('password', pasword)
+
+    
+})
+
 
 
 
